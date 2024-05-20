@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add some styles */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fafaf9;
+  font-family: 'Sora', sans-serif;
+  margin-top: 10.125rem;
+}
+
+.container {
+  max-width: 1136px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+
+/* LEFT CONTENT  */
+
+.left-content {
+  width: 50%;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 45px;
+  height: 45px;
+  background: #f5c044;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.body {
+  line-height: 1.8;
+  letter-spacing: -0.25px;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  color: #52525a;
+}
+
+.checklists {
+  list-style: none;
+}
+
+.checklist-item {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #52525a;
+}
+
+/* RIGHT CONTENT */
+
+.right-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial {
+  padding: 1.75rem 2.5rem;
+  background: #ffff;
+  border-radius: 16px;
+  max-width: 360px;
+}
+
+.testimonial:first-child {
+  margin-left: auto;
+}
+
+.testimonial__top-content {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial__logo {
+  width: 80px;
+}
+
+.testimonial__stars {
+  display: flex;
+  gap: 4px;
+}
+
+.testimonial__author {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial__text {
+  color: #52525a;
+  line-height: 2;
+}
