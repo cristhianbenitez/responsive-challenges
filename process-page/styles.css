@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add some styles */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  position: relative;
+}
+
+.highlight {
+  color: #6b59d0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.background {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 1.75rem;
+  padding-inline: 4.25rem;
+}
+
+.section {
+  padding-left: 1.5rem;
+  margin-top: 11rem;
+}
+
+.section__title {
+  font-size: 1.5rem;
+  letter-spacing: -0.01px;
+  color: #6b59d0;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.section__heading {
+  font-size: 3rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 5rem;
+  color: #374151;
+  max-width: 700px;
+}
+
+.section__processes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 20px;
+}
+
+.section__process {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+  margin-right: 2.5rem;
+}
+
+.section__image {
+  width: 52px;
+  margin-bottom: 2rem;
+}
+
+.section__process__subheading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #374151;
+}
+
+.section__process__subheading::before {
+  content: '';
+  position: absolute;
+  background-color: #6b59d0;
+  width: 2px;
+  height: 24px;
+  left: -20px;
+}
+
+.section__process__subheading::after {
+  content: '';
+  position: absolute;
+  border-left: 1px dashed #6b7280;
+  opacity: 0.5;
+  width: 2px;
+  height: 100vh;
+  transform: translateY(-55%);
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.section__process__body {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #6b7280;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section__processes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 5rem;
+  }
+
+  .section__process {
+    max-width: 240px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .section__processes {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 5rem;
+  }
+
+  .section__process {
+    max-width: 100%;
+  }
+
+  .section__heading {
+    font-size: rem;
+  }
+}
