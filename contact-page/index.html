@@ -23,41 +23,48 @@
       </header>
 
       <form action="" class="contact__form">
-        <!-- Name -->
-        <label class="contact__form__name">
-          Name
-          <input type="text" id="name" placeholder="Ethan Johnson" />
-        </label>
-        <!-- Email -->
-        <label class="contact__form__email"
-          >Email
-          <input type="email" id="email" placeholder="ethan@johnson.com" />
-        </label>
-        <!-- Company Size -->
-        <label class="contact__form__size">
-          Company Size
-          <select name="company-size" id="company-size">
-            <option value="1-10-employees">1-10 employees</option>
-            <option value="10-50-employees">10-50 employees</option>
-            <option value="50-100-employees" selected>50-100 employees</option>
-          </select>
-        </label>
-        <!-- Subject -->
-        <label class="contact__form__subject">
-          Company Size
-          <select name="subject" id="subject">
-            <option value="1-10-employees" selected>
-              Building Landing pages
-            </option>
-          </select>
-        </label>
-        <!-- Message -->
-        <label class="contact__form__message"
-          >Message
-          <input type="text" id="message" value="50-100 employee" />
-        </label>
+        <div class="contact__form__container">
+          <!-- Name -->
+          <label class="contact__form__name">
+            Name
+            <input type="text" id="name" placeholder="Ethan Johnson" />
+          </label>
+          <!-- Email -->
+          <label class="contact__form__email"
+            >Company Email
+            <input type="email" id="email" placeholder="ethan@johnson.com" />
+          </label>
+          <!-- Company Size -->
+          <label class="contact__form__size">
+            Company Size
+            <select name="company-size" id="company-size">
+              <option value="1-10-employees">1-10 employees</option>
+              <option value="10-50-employees">10-50 employees</option>
+              <option value="50-100-employees" selected>
+                50-100 employees
+              </option>
+            </select>
+          </label>
+          <!-- Subject -->
+          <label class="contact__form__subject">
+            Subject
+            <select name="subject" id="subject">
+              <option value="building-landing-pages" selected>
+                Building Landing pages
+              </option>
+              <option value="design-brand-identity">
+                Design Brand Identity
+              </option>
+            </select>
+          </label>
+          <!-- Message -->
+          <label class="contact__form__message"
+            >Message
+            <input type="text" id="message" value="50-100 employee" />
+          </label>
 
-        <button class="contact__form__button">Contact Sales</button>
+          <button class="contact__form__button">Contact Sales</button>
+        </div>
       </form>
     </div>
   </body>

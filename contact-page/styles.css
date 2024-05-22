@@ -44,6 +44,7 @@ body {
   font-family: var(--ff-be-vietnam-pro);
 
   background: url('./images/bg-image.svg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* ======================
@@ -53,12 +54,12 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 4.25rem;
 }
 
 .logo {
   margin-top: 1.25rem;
-  margin-bottom: 2.75rem;
+  margin-bottom: 2.5rem;
 }
 
 .contact__header {
@@ -70,6 +71,7 @@ body {
 
 .contact__header__heading {
   margin-bottom: 1rem;
+  margin-top: 0;
 
   font-size: var(--fs-heading);
 }
@@ -79,9 +81,22 @@ body {
 
   font-weight: 400;
   font-size: var(--fs-subheading);
+  line-height: 1.5;
 }
 
 .contact__form {
+  padding: 2rem;
+  background-color: rgba(205, 213, 224, 0.2);
+
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 5rem;
+
+  border-radius: 1.5rem;
+  color: var(--clr-white);
+}
+
+.contact__form__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.5rem 1.125rem;
@@ -91,14 +106,7 @@ body {
     'message message message message'
     'button button button button';
 
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.25);
-
-  max-width: 800px;
-  margin: 0 auto;
-
-  border-radius: 1rem;
-  color: var(--clr-white);
+  width: 746px;
 }
 
 .contact__form label {
@@ -119,6 +127,16 @@ body {
   border: none;
   font-family: var(--ff-be-vietnam-pro);
   font-weight: 600;
+
+  background-color: var(--clr-white);
+}
+
+.contact__form select {
+  border-right: 1.5rem solid transparent;
+}
+
+.contact__form input::placeholder {
+  color: var(--clr-grey);
 }
 
 .contact__form__name {
@@ -151,4 +169,35 @@ body {
   font-weight: 700;
   color: var(--clr-purple);
   border-radius: 1rem;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .contact__header {
+    max-width: 360px;
+  }
+
+  .contact__header__heading {
+    margin-bottom: 1rem;
+
+    font-size: 2.5rem;
+  }
+
+  .contact__header__subheading {
+    margin-bottom: 4.5rem;
+
+    font-weight: 400;
+    font-size: var(--fs-body);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
