@@ -113,6 +113,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 1.5rem;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -138,14 +139,6 @@ body {
     bottom: 0;
     width: 70%;
     height: 1px;
-    background: rgb(2, 0, 36);
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(0, 212, 255, 0) 100%
-    );
-
-    background: rgb(255, 255, 255);
     background: radial-gradient(
       circle,
       rgba(255, 255, 255, 1) 0%,
@@ -242,4 +235,7 @@ body {
     transform-origin: center center;
     transform: rotate(85deg);
   }
+}
+
+@media (max-width: 640px) {
 }
