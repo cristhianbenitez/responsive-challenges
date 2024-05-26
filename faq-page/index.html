@@ -11,12 +11,19 @@
       <h1 class="faq__header__heading">Frequently Asked Questions</h1>
     </header>
     <div class="faq__sub-header">
-      <h3 class="faq__sub-header__subheading"></h3>
-      <span class="faq__sub-header__text"></span>
+      <h3 class="faq__sub-header__subheading">
+        Products, Website or Brand Design, we’ve got you covered!
+      </h3>
+      <span class="faq__sub-header__text"
+        >Give us your questions, and we can help you achieve our goals
+        together!</span
+      >
     </div>
     <nav class="faq__nav">
       <ul class="faq__nav__list">
-        <li class="faq__nav__list__item">Overview</li>
+        <li class="faq__nav__list__item faq__nav__list__item--active">
+          Overview
+        </li>
         <li class="faq__nav__list__item">Design System</li>
         <li class="faq__nav__list__item">Brand Design</li>
         <li class="faq__nav__list__item">Develop Website</li>
@@ -24,46 +31,77 @@
     </nav>
 
     <section class="faq__question-list">
-      <div class="faq__question-list__item">
-        <div class="faq__question-list__item__accordion">
-          <span aria-label="accordion-button">How does it work ?</span>
-          <p></p>
-        </div>
-        <div class="faq__question-list__item__accordion">
-          <span aria-label="accordion-button"
-            >Which platform do you support?</span
-          >
-          <p>
-            In a situational interview, the interviewer may ask how you overcame
-            a difficult situation and what you learned from it. You can use your
-            response to demonstrate your flexibility and share an example of how
-            you transformed a negative experience into a positive outcome
-          </p>
-        </div>
-        <div class="faq__question-list__item__accordion">
-          <span aria-label="accordion-button"
-            >How do I invite my teammates?</span
-          >
-          <p>
-            Collect the contact information of your teammates, including their
-            email addresses or usernames on the platform you will use.
-          </p>
-        </div>
-        <div class="faq__question-list__item__accordion">
-          <span aria-label="accordion-button">Do you have annual plan?</span>
-          <p></p>
-        </div>
-        <div class="faq__question-list__item__accordion">
-          <span aria-label="accordion-button">How to create new workspace</span>
-          <p></p>
-        </div>
-        <div class="faq__question-list__item__accordion">
-          <span aria-label="accordion-button"
-            >How do I set roles & permissions?</span
-          >
-          <p></p>
-        </div>
+      <div class="faq__question-list__item-accordion">
+        <span aria-label="accordion-button"
+          >How does it work ?
+          <a class="arrow-icon">
+            <span class="left-bar"></span>
+            <span class="right-bar"></span>
+          </a>
+        </span>
+        <p></p>
+      </div>
+      <div
+        class="faq__question-list__item-accordion faq__question-list__item-accordion--open"
+      >
+        <span aria-label="accordion-button"
+          >Which platform do you support?
+          <a class="arrow-icon">
+            <span class="left-bar"></span>
+            <span class="right-bar"></span>
+          </a>
+        </span>
+        <p>
+          In a situational interview, the interviewer may ask how you overcame a
+          difficult situation and what you learned from it. You can use your
+          response to demonstrate your flexibility and share an example of how
+          you transformed a negative experience into a positive outcome
+        </p>
+      </div>
+      <div
+        class="faq__question-list__item-accordion faq__question-list__item-accordion--open"
+      >
+        <span aria-label="accordion-button"
+          >How do I invite my teammates?
+          <a class="arrow-icon">
+            <span class="left-bar"></span>
+            <span class="right-bar"></span> </a
+        ></span>
+        <p>
+          Collect the contact information of your teammates, including their
+          email addresses or usernames on the platform you will use.
+        </p>
+      </div>
+      <div class="faq__question-list__item-accordion">
+        <span aria-label="accordion-button"
+          >Do you have annual plan?
+          <a class="arrow-icon">
+            <span class="left-bar"></span>
+            <span class="right-bar"></span> </a
+        ></span>
+        <p></p>
+      </div>
+      <div class="faq__question-list__item-accordion">
+        <span aria-label="accordion-button"
+          >How to create new workspace
+          <a class="arrow-icon">
+            <span class="left-bar"></span>
+            <span class="right-bar"></span> </a
+        ></span>
+        <p></p>
+      </div>
+      <div class="faq__question-list__item-accordion">
+        <span aria-label="accordion-button"
+          >How do I set roles & permissions?
+          <a class="arrow-icon">
+            <span class="left-bar"></span>
+            <span class="right-bar"></span> </a
+        ></span>
+        <p></p>
       </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
