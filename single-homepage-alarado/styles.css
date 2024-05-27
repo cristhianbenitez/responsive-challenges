@@ -64,11 +64,11 @@ body {
 
 body {
   font-family: var(--ff-poppins);
-  position: relative;
   background: var(--clr-secondary);
 }
 
 .container {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 4.5rem;
