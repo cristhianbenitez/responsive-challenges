@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Alarado</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="nav-bar__logo"></div>
+        <div class="nav-bar__list-container">
+          <ul class="nav-bar__list">
+            <li class="nav-bar__list__item nav-bar__list__item--active">
+              About us
+            </li>
+            <li class="nav-bar__list__item">Product</li>
+            <li class="nav-bar__list__item">Resource</li>
+            <li class="nav-bar__list__item">Contact</li>
+          </ul>
+          <div class="nav-bar__theme-btn" aria-label="toggle dark-mode">
+            <!-- MOON ICON -->
+            <div class="nav-bar__theme-btn__moon" id="dark">
+              <svg
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15 4h.6c.6.2.9 1 .6 1.5l-.8.7a8 8 0 0 0 0 11.6l.8.7a1 1 0 0 1-.6 1.5H15a8 8 0 1 1 0-16"
+                  fill="#234"
+                />
+              </svg>
+            </div>
+
+            <!-- SUN ICON -->
+            <div class="nav-bar__theme-btn__sun" id="light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="4" fill="#234" />
+                <path
+                  stroke="#234"
+                  stroke-linecap="round"
+                  stroke-width="2"
+                  d="M12 5V3m0 18v-2m5-12 1.4-1.4M5.6 18.4 7.1 17M19 12h2M3 12h2m12 5 1.4 1.4M5.6 5.6 7.1 7"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-bar-burger" aria-controls="navbar__navigation">
+          <div class="nav-bar-burger-btn" aria-expanded="false"></div>
+        </div>
+      </nav>
+      <main>
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__left">
+              <h3 class="hero__top-message">
+                😎 &nbsp;Simple way to communicate
+              </h3>
+              <h1 class="hero__heading">Actions for Accessibility in Design</h1>
+              <h2 class="hero__subheading">
+                The fastest way to build and deploy websites with resusable
+                components.
+              </h2>
+              <div class="hero__btn-container">
+                <button class="hero__btn">Get Started</button>
+                <button class="hero__btn">Get live demo</button>
+              </div>
+
+              <div class="hero__footer">
+                <span
+                  ><img
+                    src="./assets//Done_ring_round_fill.svg"
+                    alt="done symbol"
+                  />No credit card required</span
+                >
+                <span
+                  ><img
+                    src="./assets//Done_ring_round_fill.svg"
+                    alt="done symbol"
+                  />No software to install</span
+                >
+              </div>
+            </div>
+            <div class="hero__right">
+              <img
+                src="./assets/hero-image-simple-homepage.png"
+                alt="illustration for page"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
