@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+}
+
+body {
+  font-family: var(--ff-be-vietnam-pro);
+  background: var(--clr-black);
+  color: var(--clr-white);
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ======================
+          Variables
+  ======================*/
+
+:root {
+}
+
+/* ======================
+          Utilities
+  ======================*/
+.container {
+}
+
+.btn {
+}
+
+.highlight {
+}
+
+/* ======================
+          Header
+  ======================*/
+
+.header {
+}
+
+/* Navbar */
+.nav {
+}
+
+.nav__logo {
+}
+
+.nav__buttons {
+}
+
+.nav__buttons__login {
+}
+
+.nav__buttons__signup {
+}
+
+/* Hero */
+.hero {
+}
+
+.hero__version {
+}
+
+.hero__heading {
+}
+
+.hero__sub {
+}
+
+.hero__buttons {
+}
+
+.hero__buttons__signup {
+}
+
+.hero__buttons__view {
+}
+
+/* ======================
+          Main
+  ======================*/
+
+.main {
+}
+
+/* Process */
+.process {
+}
+
+.process__heading {
+}
+
+.process__sub-heading {
+}
+
+.process__list {
+}
+
+.process__list-item {
+}
+
+.process__list-item__icon {
+}
+
+.process__list-item__heading {
+}
+
+.process__list-item__body {
+}
+
+/* Product Features */
+.product-features {
+}
+
+.product-features__item {
+}
+
+.product-features__item__image {
+}
+
+.product-features__item__copy {
+}
+
+.product-features__item__copy__heading {
+}
+
+.product-features__item__copy__body {
+}
+
+.product-features__item__copy__list {
+}
+
+.product-features__item__copy__list__item {
+}
+
+/* ======================
+          Footer
+  ======================*/
+
+.footer {
+}
+
+.footer__column {
+}
+
+.footer__heading {
+}
+
+.footer__logo {
+}
+
+.footer__nav {
+}
+
+.footer__nav-list {
+}
+
+.footer__nav-list__item {
+}
+
+.footer__nav-list__item {
+}
+
+.footer__nav-list__item {
+}
