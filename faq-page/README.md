@@ -1,0 +1,2 @@
+[faq-page-challenge.surge.sh
+]
