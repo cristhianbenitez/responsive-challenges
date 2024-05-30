@@ -52,3 +52,8 @@ Responsive Web Development Challenges  from [Devchallenges.io](https://devchalle
 ](https://homepage-alardo-challenge.surge.sh/)
 
 ## 8-Advanced Homepage - Hufie
+
+<a href='./advanced-homepage-hufie/'>Repository</a>
+<br/>
+[View Demo
+](https://hofie-challenge.surge.sh/)
