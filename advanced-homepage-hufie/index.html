@@ -30,38 +30,75 @@
         </nav>
       </div>
       <section class="hero">
-        <span class="hero__version"></span>
-        <h1 class="hero__heading">Where data and creativity come together.</h1>
-        <h3 class="hero__sub-heading">
-          The fastest way to build and deploy websites with reusable components.
-        </h3>
+        <div class="container">
+          <div class="hero__column">
+            <div class="hero__version">
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_771_2064)">
+                    <path
+                      d="M16.65 7.56003L11.7 2.69003C11.31 2.31003 10.69 2.31003 10.3 2.69003L5.35 7.56003C3.9 8.99003 3 10.96 3 13.13C3 17.48 6.58 21 11 21C15.42 21 19 17.48 19 13.13C19 10.96 18.1 8.99003 16.65 7.56003ZM6.75 8.99003L11 4.81003L15.25 8.99003C16.13 9.86003 17.29 11.58 16.92 14H5.07C4.7 11.58 5.87 9.85003 6.75 8.99003Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_771_2064">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <span>version 4.0.1</span>
+            </div>
+            <h1 class="hero__heading">
+              Where data and creativity come together.
+            </h1>
+            <p class="hero__sub-heading">
+              The fastest way to build and deploy websites with reusable
+              components.
+            </p>
 
-        <div class="hero__buttons">
-          <a
-            href="#"
-            aria-label="signup button"
-            class="hero__buttons__signup btn"
-            >Sign Up</a
-          >
-          <a
-            href="#"
-            aria-label="login button"
-            class="hero__buttons__view-demo btn"
-            >View Demo</a
-          >
+            <div class="hero__buttons">
+              <a
+                href="#"
+                aria-label="signup button"
+                class="hero__buttons__get-started btn"
+                >Get Started</a
+              >
+              <a
+                href="#"
+                aria-label="login button"
+                class="hero__buttons__view-demo btn"
+                >View Demo</a
+              >
+            </div>
+          </div>
+          <div class="hero__column">
+            <div class="hero__image">
+              <img src="./assets/hero-image-huffie.png" alt="hero image" />
+            </div>
+          </div>
         </div>
       </section>
     </header>
 
     <main class="main">
-      <div class="container">
-        <section class="process">
-          <h2 class="process__heading"></h2>
-          <h3 class="process__sub-heading"></h3>
+      <section class="process">
+        <div class="container">
+          <h2 class="process__heading">This is a new creative process</h2>
+          <p class="process__sub-heading">
+            Quisque eleifend velit vel erat fringilla interdum
+          </p>
 
           <ul class="process__list">
             <li class="process__list-item">
-              <div class="process__list-item__icon">
+              <div class="process__list-item__icon blue">
                 <span>🎨</span>
               </div>
               <h3 class="process__list-item__heading">
@@ -73,7 +110,7 @@
               </p>
             </li>
             <li class="process__list-item">
-              <div class="process__list-item__icon">
+              <div class="process__list-item__icon yellow">
                 <span>🎯</span>
               </div>
               <h3 class="process__list-item__heading">
@@ -85,7 +122,7 @@
               </p>
             </li>
             <li class="process__list-item">
-              <div class="process__list-item__icon">
+              <div class="process__list-item__icon green">
                 <span>🌸</span>
               </div>
               <h3 class="process__list-item__heading">
@@ -97,7 +134,7 @@
               </p>
             </li>
             <li class="process__list-item">
-              <div class="process__list-item__icon">
+              <div class="process__list-item__icon purple">
                 <span>⚙️</span>
               </div>
               <h3 class="process__list-item__heading">
@@ -109,30 +146,38 @@
               </p>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="product-features">
+      <section class="product-features">
+        <div class="container">
           <div class="product-features__item">
             <div class="product-features__item__image">
               <img src="./assets/image-1.png" alt="" />
             </div>
             <div class="product-features__item__copy">
+              <div class="product-features__item__copy__icon blue">
+                <span>🎨</span>
+              </div>
+
               <h2 class="product-features__item__copy__heading">
                 200+ cloneable components
               </h2>
-              <span>🎨</span>
               <p class="product-features__item__copy__body">
                 From navigation bars to modals, buttons to forms, our library
                 has everything you need to jumpstart your development process.
               </p>
               <ul class="product-features__item__copy__list">
                 <li class="product-features__item__copy__list__item">
+                  <img src="./assets/check_circle.svg" alt="" />
                   Rapidly build your own design system
                 </li>
                 <li class="product-features__item__copy__list__item">
+                  <img src="./assets/check_circle.svg" alt="" />
                   Maintain consistency across your website
                 </li>
                 <li class="product-features__item__copy__list__item">
+                  <img src="./assets/check_circle.svg" alt="" />
                   Save hours in production time
                 </li>
               </ul>
@@ -143,22 +188,28 @@
               <img src="./assets/image-2.png" alt="" />
             </div>
             <div class="product-features__item__copy">
+              <div class="product-features__item__copy__icon yellow">
+                <span>🎯</span>
+              </div>
+
               <h2 class="product-features__item__copy__heading">
                 Complete style guide for projects
               </h2>
-              <span>🌸</span>
               <p class="product-features__item__copy__body">
                 A comprehensive style guide can make all the difference in
                 creating a cohesive and effective design.
               </p>
               <ul class="product-features__item__copy__list">
                 <li class="product-features__item__copy__list__item">
+                  <img src="./assets/check_circle.svg" alt="" />
                   Determine the key elements of your brand
                 </li>
                 <li class="product-features__item__copy__list__item">
+                  <img src="./assets/check_circle.svg" alt="" />
                   Include guidelines for layout
                 </li>
                 <li class="product-features__item__copy__list__item">
+                  <img src="./assets/check_circle.svg" alt="" />
                   Share your style guide with your team
                 </li>
               </ul>
@@ -169,59 +220,84 @@
               <img src="./assets/image-3.png" alt="" />
             </div>
             <div class="product-features__item__copy">
+              <div class="product-features__item__copy__icon purple">
+                <span>⚙️</span>
+              </div>
+
               <h2 class="product-features__item__copy__heading">
                 Built-in multiple ways
               </h2>
-              <span>⚙️</span>
               <p class="product-features__item__copy__body">
                 Our approach to content creation allows you to build your
                 content in multiple ways, maximizing your efficiency and output.
               </p>
               <ul class="product-features__item__copy__list">
                 <li class="product-features__item__copy__list__item">
+                  <img src="./assets/check_circle.svg" alt="" />
                   Identify the core message of your content
                 </li>
                 <li class="product-features__item__copy__list__item">
+                  <img src="./assets/check_circle.svg" alt="" />
                   Create a content calendar
                 </li>
                 <li class="product-features__item__copy__list__item">
+                  <img src="./assets/check_circle.svg" alt="" />
                   Repurpose your content by adapting
                 </li>
               </ul>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__column">
-        <h2 class="footer__heading">
-          Always with the legendary customer
-          <span class="highlight">experience.</span>
-        </h2>
-        <div class="footer__logo">
-          <img src="./assets/hufie-logo.svg" alt="" />
+      <div class="container">
+        <div class="footer__row">
+          <h2 class="footer__heading">
+            Always with the legendary customer
+            <span class="highlight">experience.</span>
+          </h2>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <div class="footer__nav-list__column">
+                <li class="footer__nav-list__item">
+                  <a href="#"> Features </a>
+                </li>
+                <li class="footer__nav-list__item">
+                  <a href="#"> Glossary </a>
+                </li>
+                <li class="footer__nav-list__item"><a href="#"> FAQ </a></li>
+                <li class="footer__nav-list__item">
+                  <a href="#"> Style Guide </a>
+                </li>
+              </div>
+              <div class="footer__nav-list__column">
+                <li class="footer__nav-list__item">
+                  <a href="#"> Colors </a>
+                </li>
+                <li class="footer__nav-list__item">
+                  <a href="#"> Typography </a>
+                </li>
+                <li class="footer__nav-list__item">
+                  <a href="#"> Shadow </a>
+                </li>
+                <li class="footer__nav-list__item">
+                  <a href="#"> Avatar </a>
+                </li>
+                <li class="footer__nav-list__item">
+                  <a href="#"> Buttons </a>
+                </li>
+              </div>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <div class="footer__column">
-        <nav class="footer__nav">
-          <ul class="footer__nav-list">
-            <li class="footer__nav-list__item"><a href="#"> Features </a></li>
-            <li class="footer__nav-list__item"><a href="#"> Glossary </a></li>
-            <li class="footer__nav-list__item"><a href="#"> FAQ </a></li>
-            <li class="footer__nav-list__item">
-              <a href="#"> Style Guide </a>
-            </li>
-            <li class="footer__nav-list__item"><a href="#"> Colors </a></li>
-            <li class="footer__nav-list__item">
-              <a href="#"> Typography </a>
-            </li>
-            <li class="footer__nav-list__item"><a href="#"> Shadow </a></li>
-            <li class="footer__nav-list__item"><a href="#"> Avatar </a></li>
-            <li class="footer__nav-list__item"><a href="#"> Buttons </a></li>
-          </ul>
-        </nav>
+        <div class="footer__row">
+          <div class="footer__logo">
+            <img src="./assets/hufie-logo.svg" alt="" />
+            <span>Hufie</span>
+          </div>
+        </div>
       </div>
     </footer>
 
