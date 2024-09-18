@@ -1,0 +1,79 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add some styles */
+
+body {
+  font-family: Inter, sans-serif;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8fafc;
+}
+
+h1,
+h2,
+strong {
+  font-weight: 600;
+}
+
+header {
+  padding-block: 3rem;
+  margin-bottom: 2.5rem;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+header h1 {
+  font-size: 2.25rem;
+}
+
+main {
+  max-width: 640px;
+}
+
+a {
+  text-decoration: none;
+  color: #4e80ee;
+}
+
+.faq {
+}
+
+.faq-item {
+}
+
+.faq-item h2 {
+  line-height: 5rem;
+}
+
+.faq-item ul,
+.faq-item ol {
+  padding-left: 1.5rem;
+}
+
+.faq-item li {
+  line-height: 2rem;
+}
+
+.divider {
+  border-bottom: 1px solid #ccc;
+  margin-block: 2.5rem;
+}
