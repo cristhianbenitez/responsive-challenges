@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add some styles */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #6c727f;
+  margin-bottom: 4rem;
+}
+
+.email-form {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 12px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.email-form input,
+.email-form button {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.email-form input {
+  border: 1.5px solid rgba(108, 114, 127, 0.1);
+  outline-color: rgba(108, 114, 127, 0.5);
+  background-color: rgba(229, 231, 235, 0.1);
+  margin-bottom: 1rem;
+}
+
+.email-form input::placeholder {
+  text-align: center;
+  font-weight: 500;
+}
+.email-form button {
+  border: none;
+  background-color: #3662e3;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.email-form small {
+  color: #6c727f;
+}
