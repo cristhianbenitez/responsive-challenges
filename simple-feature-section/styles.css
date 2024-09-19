@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add some styles */
+
+body {
+  font-family: 'Outfit', system-ui;
+  background-color: #121826;
+  background-image: url(./Background_image.svg);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+  color: #e5e7eb;
+}
+
+body > header {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  margin-block: 3rem;
+}
+
+body > header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+body > header p {
+  color: #9da3ae;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+article {
+  background-color: #212936;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+article header .icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+article header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+article p {
+  color: #9da3ae;
+  margin-bottom: 1rem;
+  max-width: 240px;
+}
+
+article img {
+  border-radius: 12px;
+}
+
+.yellow-bg {
+  background-color: #fceed8;
+}
+
+.blue-bg {
+  background-color: #dee9fc;
+}
+
+.pink-bg {
+  background-color: #fbe5e6;
+}
+
+@media (max-width: 1024px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    max-width: 740px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+}
