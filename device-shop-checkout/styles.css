@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --ff-main: 'Inter', sans-serif;
+
+  --fs-heading: 1.5rem;
+  --fs-body: 1rem;
+  --fs-small: 0.75rem;
+}
+
+/* Add some styles */
+
+body {
+  font-family: var(--ff-main);
+  margin: 0 auto;
+  background-color: #f3f4f6;
+}
+
+.background-image {
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.checkout__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 3rem;
+  color: #ffffff;
+  gap: 1rem;
+}
+
+.checkout__header__heading {
+  font-size: var(--fs-heading);
+}
+
+.checkout__header__item-num {
+  background-color: #95aad0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 24px;
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+}
+
+/* Order */
+
+.order {
+  background-color: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-inline: 4rem;
+  margin-bottom: 3rem;
+}
+
+/* Order Summary */
+.order-summary {
+  background-color: #e6e7ea;
+  padding: 2rem;
+}
+
+.order-summary__items {
+  list-style: none;
+}
+
+.order-summary__item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-summary__item__image {
+  padding: 1.5rem;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  width: 112px;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.order-summary__item__image img {
+  object-fit: cover;
+  position: absolute;
+}
+
+.order-summary__item__details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order-summary__item__details__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-name,
+.price {
+  font-weight: 600;
+}
+.color {
+  display: block;
+  margin-top: 0.25rem;
+  color: #6c727f;
+}
+.quantity {
+  color: #6c727f;
+}
+
+.order-summary__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #00000032;
+  opacity: 0.5;
+  margin-bottom: 1.5rem;
+}
+
+.order-summary__coupon {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-summary__coupon input {
+  border: 1px solid #00000032;
+  border-radius: 8px;
+  padding: 0.85rem;
+  width: 75%;
+}
+.order-summary__coupon button {
+  width: 30%;
+  border: none;
+  background-color: #1d1d1f;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+.order-summary__totals div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: #6c727f;
+}
+
+.order-summary__totals div:last-child {
+  margin-bottom: 0;
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+/* Order Form */
+
+.order-form {
+  padding: 2rem;
+}
+
+.order-form__heading {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.order-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-form__form__form-group {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.order-form__form__form-group label {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  width: 100%;
+  gap: 0.75rem;
+  color: #6c727f;
+}
+
+.order-form__form__form-group input,
+.order-form__form__form-group select {
+  padding: 1rem;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f4f6;
+  border: 1px solid #00000033;
+}
+
+.order-form__form__form-group select {
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-image: url('./arrow-down.svg');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+}
+
+.order-form__form__form-group input::placeholder {
+  color: #6c727f;
+}
+
+.order-form__form__submit {
+  margin-top: 0.5rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #1d1d1f;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (min-width: 800px) {
+  .order {
+    display: flex;
+  }
+
+  .order-summary {
+    width: 50%;
+  }
+
+  .order-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: clamp(0.85rem, 1.5vw, 1.25rem);
+  }
+
+  .order {
+    margin-inline: 1.5rem;
+  }
+}

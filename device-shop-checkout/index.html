@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Device Shop Checkout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img
+      src="background-image.png"
+      srcset="background-image.png 1024w, background-image@2x.png 2048w"
+      alt="Background Image"
+      class="background-image"
+    />
+    <header class="checkout__header">
+      <h1 class="checkout__header__heading">Checkout</h1>
+      <span class="checkout__header__item-num">3 Items</span>
+    </header>
+    <main class="order">
+      <section aria-labelledby="order-summary" class="order-summary">
+        <ul class="order-summary__items">
+          <li class="order-summary__item">
+            <div class="order-summary__item__image">
+              <img
+                src="Gold.png"
+                srcset="Gold.png 500w, Gold@2x.png 1000w"
+                sizes="(max-width: 720px) 70vw, 420px"
+                alt="iPhone 12 Pro in Golden"
+                class="item__image"
+              />
+            </div>
+            <div class="order-summary__item__details">
+              <div>
+                <div class="order-summary__item__details__row">
+                  <span class="product-name">iPhone 12 Pro</span>
+                  <span class="price">$999.00</span>
+                </div>
+                <span class="color">Golden</span>
+              </div>
+              <div class="order-summary__item__details__row">
+                <span class="quantity">x 1</span>
+                <span class="remove"
+                  ><img
+                    src="./close-icon.svg"
+                    alt="close icon to delete item from order"
+                /></span>
+              </div>
+            </div>
+          </li>
+          <li class="order-summary__item">
+            <div class="order-summary__item__image">
+              <img
+                src="Blue.png"
+                srcset="Blue.png 500w, Blue@2x.png 1000w"
+                sizes="(max-width: 720px) 70vw, 420px"
+                alt="Blue apple Watch 5"
+                class="item__image"
+              />
+            </div>
+            <div class="order-summary__item__details">
+              <div>
+                <div class="order-summary__item__details__row">
+                  <span class="product-name">Apple Watch</span>
+                  <span class="price">$399.00</span>
+                </div>
+                <span class="color">Blue</span>
+              </div>
+              <div class="order-summary__item__details__row">
+                <span class="quantity">x 1</span>
+                <span class="remove"
+                  ><img
+                    src="./close-icon.svg"
+                    alt="close icon to delete item from order"
+                /></span>
+              </div>
+            </div>
+          </li>
+          <li class="order-summary__item">
+            <div class="order-summary__item__image">
+              <img
+                src="iMac=Front 1.png"
+                srcset="iMac=Front 1.png 500w, iMac=Front 1@2x.png 1000w"
+                sizes="(max-width: 720px) 70vw, 50vw"
+                alt="iPhone 12 Pro in Golden"
+                class="item__image"
+              />
+            </div>
+            <div class="order-summary__item__details">
+              <div>
+                <div class="order-summary__item__details__row">
+                  <span class="product-name">iMac</span>
+                  <span class="price">$1199.00</span>
+                </div>
+                <span class="color">Green</span>
+              </div>
+              <div class="order-summary__item__details__row">
+                <span class="quantity">x 1</span>
+                <span class="remove"
+                  ><img
+                    src="./close-icon.svg"
+                    alt="close icon to delete item from order"
+                /></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="order-summary__divider"></div>
+
+        <form class="order-summary__coupon" action="#">
+          <input
+            required
+            type="text"
+            id="coupon"
+            name="coupon"
+            placeholder="Enter coupon code"
+            required
+          />
+          <button type="submit">Apply Coupon</button>
+        </form>
+        <div class="order-summary__totals">
+          <div><span>Subtotal</span> <span>$2597.00</span></div>
+          <div><span>Tax</span> <span>$623.28</span></div>
+          <div><span>Total</span> <span>$3220.28</span></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="contact-info" class="order-form">
+        <h2 id="contact-info" class="order-form__heading">
+          Contact Information
+        </h2>
+        <form class="order-form__form">
+          <div class="order-form__form__form-group">
+            <label for="name"
+              >First & Last name
+              <input
+                required
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter first & last name"
+              />
+            </label>
+          </div>
+          <div class="order-form__form__form-group">
+            <label for="email"
+              >Email Address
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email address"
+              />
+            </label>
+          </div>
+          <div class="order-form__form__form-group">
+            <label for="country"
+              >Country
+              <select id="country" name="country">
+                <option value="Japan">Japan</option>
+              </select>
+            </label>
+            <label for="postal-code"
+              >Postal Code
+              <input
+                required
+                type="text"
+                id="postal-code"
+                name="postal-code"
+                placeholder="Enter postal code"
+              />
+            </label>
+          </div>
+          <button type="submit" class="order-form__form__submit">
+            Continue
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
