@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="product">
+      <div class="product__image">
+        <img
+          src="shoe_image.png"
+          alt="Black shoes in a orange and blue background"
+          srcset="shoe_image.png 500w, shoe_image@2x.png 1000w"
+          sizes="(max-width: 720px) 100vw, 100vw"
+        />
+      </div>
+
+      <div class="product__info">
+        <nav class="product__info__breadcrumbs">
+          <ul>
+            <li>Home</li>
+            -
+            <li>Products</li>
+            -
+            <li>Sneakers</li>
+          </ul>
+        </nav>
+        <h2 class="product__info__title">
+          Nike Air Zoom Pegasus 38 for Running Men
+        </h2>
+        <p class="product__info__description">
+          The Nike Air Zoom Pegasus 38 is a high-performance running shoe
+          designed for speed and agility. With its lightweight and responsive
+          midsole, this shoe provides a smooth ride and excellent cushioning.
+          The Pegasus 38 features a full-length Zoom Air unit for added bounce
+          and a more natural stride. The upper is made of a breathable mesh
+          material with a supportive Flyknit construction for a snug and
+          comfortable fit.
+        </p>
+
+        <div class="product__info__highlights">
+          <h3>Hightlights:</h3>
+          <ul>
+            <li>Lightweight and Responsive Midsole.</li>
+            <li>Full-Length Zoom Air Unit.</li>
+            <li>Breathable Mesh Uppe.</li>
+          </ul>
+        </div>
+        <div class="product__info__details">
+          <div class="product__info__details__color">
+            <span>Color</span>
+            <span>Black</span>
+          </div>
+          <div class="product__info__details__size">
+            <span>Size</span>
+            <span>42</span>
+          </div>
+          <div>
+            <span class="product__info__details__price">$59.00</span>
+          </div>
+        </div>
+        <div class="product__info__buttons">
+          <button>Add to cart</button>
+          <button>
+            <img src="heart.svg" alt="heart icon" /> Add to whishlist
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
