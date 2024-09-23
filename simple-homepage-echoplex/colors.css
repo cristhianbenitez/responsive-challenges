@@ -1,0 +1,52 @@
+/* Background colors */
+.bg-light-purple {
+  background-color: #c9d2fa;
+}
+.bg-light-green {
+  background-color: #e2fbe8;
+}
+.bg-light-red {
+  background-color: #fbe5e6;
+}
+.bg-light-yellow {
+  background-color: #fdf9c9;
+}
+.bg-light-orange {
+  background-color: #fceed8;
+}
+.bg-light-blue {
+  background-color: #dee9fc;
+}
+.bg-light-pink {
+  background-color: #f1e8fd;
+}
+.bg-light-cyan {
+  background-color: #d5faf1;
+}
+
+/* Text colors */
+
+.text-purple {
+  color: #4e46dc;
+}
+.text-green {
+  color: #5ec269;
+}
+.text-red {
+  color: #e14f62;
+}
+.text-yellow {
+  color: #e2b53e;
+}
+.text-orange {
+  color: #e87b35;
+}
+.text-blue {
+  color: #4e80ee;
+}
+.text-pink {
+  color: #c951e7;
+}
+.text-cyan {
+  color: #52b3d0;
+}

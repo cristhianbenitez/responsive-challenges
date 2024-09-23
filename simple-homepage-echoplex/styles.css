@@ -1,0 +1,372 @@
+/* ===========
+    Fonts
+  ===========*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ===========
+    CSS Reset
+  ===========*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ===========
+    Variables
+  ===========*/
+
+:root {
+  --ff-main: 'Be Vietnam Pro', sans-serif;
+
+  --fs-heading: 2.25rem;
+  --fs-heading-2: 2rem;
+  --fs-label: 1.25rem;
+  --fs-body: 1rem;
+}
+
+/* ===========
+    Styles
+  ===========*/
+
+body {
+  font-family: var(--ff-main);
+  color: #121826;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 4.5rem;
+}
+
+.button {
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 32px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+}
+
+/* Navigation */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+}
+
+.nav-bar__logo {
+}
+
+.nav-bar__btn {
+  background-color: #c9d2fa;
+  color: #4e46dc;
+}
+
+/* Hero */
+
+.hero {
+  margin-bottom: 2.25rem;
+}
+
+.hero__container {
+  padding-block: 1.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
+.hero__text {
+}
+
+.hero__title {
+  font-size: var(--fs-heading);
+  margin-bottom: 2rem;
+}
+
+.hero__title--highlight {
+  color: #4e46dc;
+}
+
+.hero__description {
+  margin-bottom: 2rem;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.hero__buttons__btn {
+  color: #ffffff;
+  background-color: #4e46dc;
+}
+
+.hero__buttons__btn:nth-child(2) {
+  color: #4e46dc;
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+}
+
+.hero__image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 900px) {
+  .hero__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .hero__text {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero__text {
+    max-width: 580px;
+  }
+}
+
+/* Join */
+
+.join {
+  margin-bottom: 4.5rem;
+}
+
+.join__container {
+  padding-block: 4.5rem;
+}
+
+.join__title {
+  font-size: var(--fs-heading-2);
+  text-align: center;
+  max-width: 420px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.join__benefits {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4rem;
+}
+
+.join__benefits__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.join__benefits__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 68px;
+  height: 68px;
+  border-radius: 8px;
+  background-color: #4e46dc;
+  font-size: 2rem;
+}
+
+.join__benefits__text {
+  font-size: var(--fs-label);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.join__benefits__text--highlight {
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .join__benefits {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .join__benefits__item:nth-child(1) {
+    grid-column: 1/3;
+  }
+  .join__benefits__item:nth-child(2) {
+    grid-column: 3/5;
+  }
+  .join__benefits__item:nth-child(3) {
+    grid-column: 5/7;
+  }
+  .join__benefits__item:nth-child(4) {
+    grid-column: 1/3;
+  }
+  .join__benefits__item:nth-child(5) {
+    grid-column: 3/5;
+  }
+  .join__benefits__item:nth-child(6) {
+    grid-column: 5/7;
+  }
+  .join__benefits__item:nth-child(7) {
+    grid-column: 2/3;
+  }
+  .join__benefits__item:nth-child(8) {
+    grid-column: 5/6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .join__benefits {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* CTA */
+
+.cta {
+  background-image: url(./footer_background_image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 11.75rem;
+  padding-bottom: 10.25rem;
+  padding-inline: 4.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cta__title {
+  max-width: 340px;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.cta__btn {
+  background-color: #4e46dc;
+  color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .cta {
+    background-image: url(./footer_background_image@2x.png);
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: #121826;
+}
+
+.footer .container {
+  padding-block: 1.5rem;
+  display: flex;
+  color: #9da3ae;
+  width: 100%;
+}
+
+.footer__copyright {
+  margin-right: 2rem;
+}
+
+.footer__nav {
+}
+
+.footer__nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__nav__item a {
+  text-decoration: none;
+  color: currentColor;
+  font-weight: 700;
+}

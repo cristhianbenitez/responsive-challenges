@@ -4,117 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Echoplex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="colors.css" />
   </head>
   <body>
     <header>
-      <nav class="nav-bar">
-        <img src="logo.svg" alt="logo" class="nav-bar__logo" />
-        <a href="#" class="nav-bar__btn">Connect</a>
-      </nav>
+      <div class="container">
+        <nav class="nav-bar">
+          <img src="EchoPlex Logo.svg" alt="logo" class="nav-bar__logo" />
+          <a href="#" class="nav-bar__btn button">Connect</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero__container">
-          <div class="hero__text">
-            <h1>
-              <span>EchoPlex</span> is the first community-owned digital art
-              gallery.
-            </h1>
-            <p>
-              Empowering Artists and Connecting Communities Through Digital Art
-            </p>
+      <div class="container">
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__text">
+              <h1 class="hero__title">
+                <span class="hero__title--highlight">EchoPlex</span> is the first community-owned digital art gallery.
+              </h1>
+              <p class="hero__description">Empowering Artists and Connecting Communities Through Digital Art</p>
+
+              <div class="hero__buttons">
+                <a href="#" class="hero__buttons__btn button">Create</a>
+                <a href="#" class="hero__buttons__btn button">Explore</a>
+              </div>
+            </div>
+            <div class="hero__image">
+              <img
+                src="hero_image.png"
+                alt="image"
+                srcset="hero_image.png 500w, hero_image@2x.png 1000w"
+                sizes="(max-width: 720px) 100vw, 40vw"
+              />
+            </div>
           </div>
-          <div class="hero__image">
-            <img
-              src="hero_image.png"
-              alt="image"
-              srcset="hero_image.png 500w, hero_image@2x.png 1000w"
-              sizes="(max-width: 720px) 100vw, 40vw"
-              class="bento-box__image"
-            />
+        </section>
+
+        <section class="join">
+          <div class="join__container">
+            <h2 class="join__title">Join 30,000+ creators and collections</h2>
+            <ul class="join__benefits">
+              <li class="join__benefits__item">
+                <div class="join__benefits__icon bg-light-purple"><span>👾</span></div>
+                <p class="join__benefits__text">
+                  <span class="join__benefits__text--highlight text-purple">Immersive Digital</span>
+                  Art Experience
+                </p>
+              </li>
+              <li class="join__benefits__item">
+                <div class="join__benefits__icon bg-light-green"><span>⚙️</span></div>
+                <p class="join__benefits__text">
+                  <span class="join__benefits__text--highlight text-green">Customizable</span>
+                  Flooring
+                </p>
+              </li>
+              <li class="join__benefits__item">
+                <div class="join__benefits__icon bg-light-red"><span>🎭</span></div>
+                <p class="join__benefits__text">
+                  <span class="join__benefits__text--highlight text-red">State-of-the-Art</span>
+                  Displays
+                </p>
+              </li>
+              <li class="join__benefits__item">
+                <div class="join__benefits__icon bg-light-yellow"><span>🎓</span></div>
+                <p class="join__benefits__text">
+                  <span class="join__benefits__text--highlight text-yellow">Expertly Designed</span>
+                  Lighting and Sound
+                </p>
+              </li>
+              <li class="join__benefits__item">
+                <div class="join__benefits__icon bg-light-orange"><span>👨🏻‍💻</span></div>
+                <p class="join__benefits__text">
+                  <span class="join__benefits__text--highlight text-orange">Community</span>
+                  Engagement
+                </p>
+              </li>
+              <li class="join__benefits__item">
+                <div class="join__benefits__icon bg-light-blue"><span>👩‍🎨</span></div>
+                <p class="join__benefits__text">
+                  <span class="join__benefits__text--highlight text-blue">Artist</span>
+                  Collaborations
+                </p>
+              </li>
+              <li class="join__benefits__item">
+                <div class="join__benefits__icon bg-light-pink"><span>📚</span></div>
+                <p class="join__benefits__text">
+                  <span class="join__benefits__text--highlight text-pink">Educational</span>
+                  Programs
+                </p>
+              </li>
+              <li class="join__benefits__item">
+                <div class="join__benefits__icon bg-light-cyan"><span>🤖</span></div>
+                <p class="join__benefits__text">
+                  <span class="join__benefits__text--highlight text-cyan">Technology</span>
+                  Integration
+                </p>
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
-      <section class="join">
-        <div class="join__container">
-          <h2 class="join__title">Join 30,000+ creators and collections</h2>
-          <ul class="join__benefits">
-            <li class="join__benefits__item">
-              <span class="join__benefits__icon">👾</span>
-              <p class="join__benefits__text">
-                <span class="join__benefits__text--highlight"
-                  >Immersive Digital Art</span
-                >
-                Experience
-              </p>
-            </li>
-            <li class="join__benefits__item">
-              <span class="join__benefits__icon">⚙️</span>
-              <p class="join__benefits__text">
-                <span class="join__benefits__text--highlight"
-                  >Customizable</span
-                >
-                Flooring
-              </p>
-            </li>
-            <li class="join__benefits__item">
-              <span class="join__benefits__icon">👾</span>
-              <p class="join__benefits__text">
-                <span class="join__benefits__text--highlight"
-                  >Immersive Digital Art</span
-                >
-                Experience
-              </p>
-            </li>
-            <li class="join__benefits__item">
-              <span class="join__benefits__icon">👾</span>
-              <p class="join__benefits__text">
-                <span class="join__benefits__text--highlight"
-                  >Immersive Digital Art</span
-                >
-                Experience
-              </p>
-            </li>
-            <li class="join__benefits__item">
-              <span class="join__benefits__icon">👾</span>
-              <p class="join__benefits__text">
-                <span class="join__benefits__text--highlight"
-                  >Immersive Digital Art</span
-                >
-                Experience
-              </p>
-            </li>
-            <li class="join__benefits__item">
-              <span class="join__benefits__icon">👾</span>
-              <p class="join__benefits__text">
-                <span class="join__benefits__text--highlight"
-                  >Immersive Digital Art</span
-                >
-                Experience
-              </p>
-            </li>
-            <li class="join__benefits__item">
-              <span class="join__benefits__icon">👾</span>
-              <p class="join__benefits__text">
-                <span class="join__benefits__text--highlight"
-                  >Immersive Digital Art</span
-                >
-                Experience
-              </p>
-            </li>
-            <li class="join__benefits__item">
-              <span class="join__benefits__icon">👾</span>
-              <p class="join__benefits__text">
-                <span class="join__benefits__text--highlight"
-                  >Immersive Digital Art</span
-                >
-                Experience
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
+
+    <footer class="footer">
+      <section class="cta">
+        <div class="cta__container">
+          <h2 class="cta__title">Begin you digital art journey with EchoPlex</h2>
+          <a href="#" class="cta__btn button">Create</a>
+        </div>
+      </section>
+      <div class="footer__container container">
+        <span class="footer__copyright"> © EchoPlex Oy. All rights reserved. </span>
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__item"><a href="#">Term</a></li>
+            <li class="footer__nav__item"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
