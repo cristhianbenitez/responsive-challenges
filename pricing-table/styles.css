@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Table Reset */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+
+caption {
+  caption-side: top;
+  text-align: center;
+}
+
+thead,
+tbody,
+tfoot,
+tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+colgroup,
+col {
+  display: table-column;
+}
+
+/* Add some styles */
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+th,
+td {
+  padding: 1rem 0.75rem;
+  text-align: center;
+}
+
+/* ---------------- Header ---------------- */
+
+.header {
+  background-color: #f8fafc;
+  border-bottom: 2px solid #e5e7eb;
+  background-image: url(./sand-background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    background-image: url(./sand-background-image@2x.png);
+  }
+}
+
+.header-container {
+  max-width: 1280px;
+  padding-inline: 3rem;
+  padding-block: 3.25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 0.75rem;
+  color: #121826;
+}
+
+.subheading {
+  max-width: 448px;
+  margin: 0 auto;
+  color: #4d5562;
+}
+
+.main {
+  padding-block: 3.75rem;
+}
+.pricing {
+  max-width: 1280px;
+  padding-inline: 3rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .header-container {
+    padding-inline: 1rem;
+  }
+  .pricing {
+    padding-inline: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header-container {
+    padding-inline: 4.5rem;
+  }
+  .pricing {
+    padding-inline: 4.5rem;
+  }
+}
+
+/*---------------- Pricing Table Grid Style to be able to manipulate column positions ----------------*/
+
+/* Apply grid layout to each row */
+thead tr,
+tbody tr,
+tfoot tr {
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr; /* Adjust number of columns */
+  grid-auto-flow: column;
+}
+
+/* Reorder columns */
+thead th:nth-child(1),
+tbody td:nth-child(1),
+tfoot td:nth-child(1) {
+  grid-column: 1; /* First column */
+}
+
+thead th:nth-child(4),
+thead .popular,
+tbody td:nth-child(4),
+tfoot td:nth-child(4) {
+  grid-column: 3; /* Fourth column */
+}
+
+thead th:nth-child(5),
+tbody td:nth-child(5),
+tfoot td:nth-child(5) {
+  grid-column: 2; /* Fifth column */
+}
+
+/* Hide Columns */
+.pricing-table td:nth-child(2),
+.pricing-table th:nth-child(2),
+.pricing-table td:nth-child(3),
+.pricing-table th:nth-child(3) {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  thead tr,
+  tbody tr,
+  tfoot tr {
+    grid-template-columns: max-content 1fr 1fr 1fr; /* Adjust number of columns */
+  }
+
+  thead th:nth-child(3),
+  tbody td:nth-child(3),
+  tfoot td:nth-child(3) {
+    grid-column: 2;
+    /* Third column */
+  }
+
+  thead th:nth-child(4),
+  thead .popular,
+  tbody td:nth-child(4),
+  tfoot td:nth-child(4) {
+    grid-column: 3; /* Fourth column */
+  }
+
+  thead th:nth-child(5),
+  tbody td:nth-child(5),
+  tfoot td:nth-child(5) {
+    grid-column: 4; /* Fifth column */
+  }
+
+  .pricing-table td:nth-child(3),
+  .pricing-table th:nth-child(3) {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  thead tr,
+  tbody tr,
+  tfoot tr {
+    grid-template-columns: max-content 1fr 1fr 1fr 1fr; /* Adjust number of columns */
+  }
+  thead th:nth-child(2),
+  tbody td:nth-child(2),
+  tfoot td:nth-child(2) {
+    grid-column: 2; /* Second column */
+  }
+
+  thead th:nth-child(3),
+  tbody td:nth-child(3),
+  tfoot td:nth-child(3) {
+    grid-column: 3; /* Third column */
+  }
+  thead th:nth-child(4),
+  thead .popular,
+  tbody td:nth-child(4),
+  tfoot td:nth-child(4) {
+    grid-column: 4; /* Fourth column */
+  }
+
+  thead th:nth-child(5),
+  tbody td:nth-child(5),
+  tfoot td:nth-child(5) {
+    grid-column: 5; /* Fifth column */
+  }
+
+  .pricing-table td:nth-child(2),
+  .pricing-table th:nth-child(2) {
+    display: block;
+  }
+}
+
+/*------------------------------------------------ Pricing Table ------------------------------------------------*/
+
+.pricing-table {
+}
+
+.pricing-table th:nth-child(1),
+.pricing-table td:nth-child(1) {
+  font-weight: 600;
+  text-align: left;
+  background-color: #f8fafc;
+  width: 128px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 800px) {
+  .pricing-table th:nth-child(1),
+  .pricing-table td:nth-child(1) {
+    width: 220px;
+  }
+}
+@media (min-width: 1200px) {
+  .pricing-table td:nth-child(2) {
+    /* padding-left: 3rem; */
+  }
+}
+
+.pricing-table td:nth-child(1),
+.pricing-table td:nth-child(2),
+.pricing-table td:nth-child(3),
+.pricing-table td:nth-child(5) {
+  border-bottom: 1px solid #e5e7eb;
+}
+.pricing-table td:nth-child(4) {
+  border-bottom: 1px solid #121826;
+}
+
+.pricing-table__tier th:first-child,
+.pricing-table__price td:first-child,
+.pricing-table__frequency td:first-child {
+  background-color: unset;
+}
+
+.popular {
+  background-color: #121826;
+  color: #ffffff;
+}
+
+.pricing-table__head th {
+  padding-bottom: 0.75rem;
+}
+
+.pricing-table__head td {
+  padding-top: 0;
+}
+
+.pricing-table__tier .popular {
+  padding-top: 1.5rem;
+  border-radius: 16px 16px 0 0;
+}
+.pricing-table__tier .popular span {
+  display: flex;
+  justify-content: center;
+  background-color: #3662e3;
+  color: #ffffff;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.05rem 0.75rem;
+  border-radius: 16px;
+}
+.pricing-table__tier th {
+  display: flex !important;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.pricing-table__tier th {
+  color: #3662e3;
+  font-weight: 600;
+}
+
+.pricing-table__price td {
+  font-size: 4rem;
+  font-weight: 600;
+  border-bottom: none !important;
+  padding-bottom: 0.375rem;
+}
+@media (max-width: 1024px) {
+  .pricing-table__price td {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+}
+
+.pricing-table__frequency td {
+  color: #4d5562;
+  padding-top: 0;
+  padding-bottom: 2.875rem;
+  border-bottom: none !important;
+}
+.pricing-table__frequency .popular {
+  color: #ffffff;
+}
+
+.pricing-table__body {
+}
+
+.pricing-table__body tr:first-child td:first-child {
+  border-radius: 16px 0 0 0;
+}
+.pricing-table__body tr:last-child td:first-child {
+  border-radius: 0 0 0 16px;
+}
+
+.pricing-table__foot td:first-child {
+  background-color: unset;
+}
+.pricing-table__foot td {
+  padding-block: 1.5rem;
+  border-bottom: none !important;
+  color: #3662e3;
+}
+.pricing-table__foot .get-started {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricing-table__foot .popular {
+  border-radius: 0 0 16px 16px;
+  background-color: #e9a23b;
+  color: #ffffff;
+}
+.pricing-table__button {
+}
