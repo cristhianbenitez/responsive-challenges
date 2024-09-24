@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HBank</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
+  </head>
+  <body class="dashboard">
+    <header class="dashboard__header">
+      <h1 class="dashboard__logo"><img src="assets/logo.svg" alt="HBank logo" />HBank</h1>
+      <a class="dashboard__user-info">
+        <img
+          src="assets/avatar.png"
+          alt="user avatar"
+          srcset="assets/avatar.png 500w, assets/avatar@2x.png 1000w"
+          sizes="(max-width  720px) 100vw, 40vw"
+        />
+        Ethan Sutcliffe
+      </a>
+    </header>
+
+    <nav class="dashboard__nav">
+      <ul role="list" class="dashboard__nav-list">
+        <div class="dashboard__nav-top">
+          <li class="dashboard__nav-item">
+            <a href="#dashboard" class="dashboard__nav-link">
+              <img src="assets/House.svg" alt="" class="dashboard__nav-icon" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="dashboard__nav-item">
+            <h3 class="dashboard__nav-subtitle">Analytics</h3>
+            <ul role="list" class="dashboard__nav-sublist">
+              <li class="dashboard__nav-subitem">
+                <a href="#performance" class="dashboard__nav-link">
+                  <img src="assets/chart-1.svg" alt="" class="dashboard__nav-icon" />
+                  <span>Performance</span>
+                </a>
+              </li>
+              <li class="dashboard__nav-subitem">
+                <a href="#hotjar" class="dashboard__nav-link">
+                  <img src="assets/Archery.svg" alt="" class="dashboard__nav-icon" />
+                  <span>Hotjar <small class="dashboard__nav-subitem--badge">New</small></span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dashboard__nav-item">
+            <h3 class="dashboard__nav-subtitle">Support</h3>
+            <ul role="list" class="dashboard__nav-sublist">
+              <li class="dashboard__nav-subitem">
+                <a href="#tickets" class="dashboard__nav-link">
+                  <img src="assets/ticket.svg" alt="" class="dashboard__nav-icon" />
+                  <span>Tickets <small class="dashboard__nav-subitem--badge grey">18</small></span>
+                </a>
+              </li>
+              <li class="dashboard__nav-subitem">
+                <a href="#agents" class="dashboard__nav-link">
+                  <img src="assets/account.svg" alt="" class="dashboard__nav-icon" />
+                  <span>Agents</span>
+                </a>
+              </li>
+              <li class="dashboard__nav-subitem">
+                <a href="#customers" class="dashboard__nav-link">
+                  <img src="assets/users.svg" alt="" class="dashboard__nav-icon" />
+                  <span>Customers</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dashboard__nav-item">
+            <h3 class="dashboard__nav-subtitle">Shop</h3>
+            <ul role="list" class="dashboard__nav-sublist">
+              <li class="dashboard__nav-subitem">
+                <a href="#products" class="dashboard__nav-link">
+                  <img src="assets/shop.svg" alt="" class="dashboard__nav-icon" />
+                  <span>Products</span>
+                </a>
+              </li>
+              <li class="dashboard__nav-subitem">
+                <a href="#order" class="dashboard__nav-link">
+                  <img src="assets/basket.svg" alt="" class="dashboard__nav-icon" />
+                  <span>Order</span>
+                </a>
+              </li>
+              <li class="dashboard__nav-subitem">
+                <a href="#reports" class="dashboard__nav-link">
+                  <img src="assets/chat info.svg" alt="" class="dashboard__nav-icon" />
+                  <span>Reports</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </div>
+
+        <div class="dashboard__nav-bottom">
+          <li class="dashboard__nav-item">
+            <a href="#settings" class="dashboard__nav-link">
+              <img src="assets/Setting.svg" alt="" class="dashboard__nav-icon" />
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="dashboard__nav-item">
+            <a href="#logoout" class="dashboard__nav-link">
+              <img src="assets/Logout.svg" alt="" class="dashboard__nav-icon" />
+              <span>Logout</span>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <main class="dashboard__main-content">
+      <section class="finances">
+        <div class="finances__container">
+          <section class="inventory">
+            <h2 class="inventory__heading">Inventory Details</h2>
+            <div class="inventory__balance">
+              <div class="inventory__balance--left">
+                <h3 class="inventory__balance-title">Your balance:</h3>
+                <p class="inventory__balance-amount">$25,330</p>
+                <p class="inventory__balance-cards">3 cards</p>
+              </div>
+              <div class="inventory__balance--right">
+                <a href="#" class="inventory__balance__btn"
+                  >Details <img src="assets/left-arrow.svg" alt="left-arrow"
+                /></a>
+              </div>
+            </div>
+            <h2 class="inventory__heading">Inventory Details <span class="inventory__heading--badge">2</span></h2>
+            <ul role="list" class="inventory__cards-list">
+              <li class="inventory__card card">
+                <div class="card-top">
+                  <h3 class="card-title">Shopping Card</h3>
+                  <img src="assets/Chip.svg" alt="chip icon" class="card-icon" />
+                  <p class="card-name">NAME</p>
+                  <p class="card-expiry">Exp 26/6</p>
+                </div>
+                <div class="card-bottom">
+                  <p class="card-number">**** **** 0928</p>
+                  <img src="assets/visa-icon.svg" alt="visa company icon" class="card-network" />
+                </div>
+              </li>
+              <li class="inventory__card card">
+                <div class="card-top">
+                  <h3 class="card-title">Shopping Card</h3>
+                  <img src="assets/Chip.svg" alt="chip icon" class="card-icon" />
+                  <p class="card-name">NAME</p>
+                  <p class="card-expiry">Exp 26/6</p>
+                </div>
+                <div class="card-bottom">
+                  <p class="card-number">**** **** 4486</p>
+                  <img src="assets/visa-icon.svg" alt="visa company icon" class="card-network" />
+                </div>
+              </li>
+              <a class="inventory__add-card">
+                <span> <img src="./assets/Plus.svg" alt="plus icon" />Add Card</span>
+              </a>
+            </ul>
+          </section>
+
+          <section class="summary">
+            <ul role="list" class="summary__list">
+              <li class="summary__item">
+                <div class="summary__item-icon">
+                  <img src="assets/chart.svg" alt="chat icon" />
+                </div>
+                <div class="summary__item__text">
+                  <h3 class="summary__item-title">Earnings</h3>
+                  <p class="summary__item-amount">$12,341</p>
+                </div>
+              </li>
+              <li class="summary__item">
+                <div class="summary__item-icon">
+                  <img src="assets/dollar coin.svg" alt="coin icon" />
+                </div>
+                <div class="summary__item__text">
+                  <h3 class="summary__item-title">Spendings</h3>
+                  <p class="summary__item-amount">$4,009</p>
+                </div>
+              </li>
+              <li class="summary__item">
+                <div class="summary__item-icon">
+                  <img src="assets/aim.svg" alt="aim icon" />
+                </div>
+                <div class="summary__item__text">
+                  <h3 class="summary__item-title">Goals</h3>
+                  <p class="summary__item-amount">$8,098</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="card-details">
+        <div class="card-details__container">
+          <h2 class="card-details__heading">Card details</h2>
+          <div class="card-details__card--container-outer">
+            <div class="card-details__card--container-inner">
+              <div class="card-details__card card">
+                <div class="card-top">
+                  <h3 class="card-title">Shopping Card</h3>
+                  <img src="assets/Chip.svg" alt="chip icon" class="card-icon" />
+                  <p class="card-name">NAME</p>
+                  <p class="card-expiry">Exp 26/6</p>
+                </div>
+                <div class="card-bottom">
+                  <p class="card-number">**** **** 7800</p>
+                  <img src="assets/visa-icon.svg" alt="visa company icon" class="card-network" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-details__number">
+            <span>Card Number</span>
+            <span>**** 1234 4567 7800</span>
+          </div>
+          <div class="card-details__info">
+            <div class="card-details__expiry">
+              <span>Expire Date</span>
+              <span>08/28</span>
+            </div>
+            <div class="card-details__cvv">
+              <span>CVV</span>
+              <span>08/28</span>
+            </div>
+            <div class="card-details__level">
+              <span>Level</span>
+              <span>02</span>
+            </div>
+          </div>
+          <div class="card-details__spending-limits">
+            <h3 class="card-details__spending-title">Spending limits</h3>
+            <p class="card-details__spending-limit">Daily Transaction Limit</p>
+            <div class="card-details__spending-bar">
+              <div class="card-details__spending-bar-fill"></div>
+            </div>
+            <p class="card-details__amount-spent">$400 spent of $2000</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
