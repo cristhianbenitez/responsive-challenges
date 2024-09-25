@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Add some styles */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #121826;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.checkout-column .container {
+  padding: 2rem;
+  height: 100%;
+}
+
+.checkout-column:first-child {
+  padding: 1.25rem;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+.heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.subheading {
+  font-size: 0.875rem;
+  color: #6c727f;
+  margin-bottom: 2rem;
+}
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.payment-form__group,
+.payment-form__group--location label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6c727f;
+  gap: 0.75rem;
+}
+.payment-form input {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #d2d5da;
+  transition: border-color 0.3s;
+}
+.payment-form input:active,
+.payment-form input:focus {
+  border: 2px solid #743ee4;
+  outline: none;
+}
+.payment-form input::placeholder {
+  font-weight: 400;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+.payment-form__group--payment-methods {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.payment-form__group--payment-methods label {
+  border: 1px solid #d2d5da;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  flex-direction: column;
+  font-size: 0.875rem;
+  color: #121826;
+  transition: border-color 0.3s;
+}
+
+.payment-form__group--payment-methods label:active,
+.payment-form__group--payment-methods label:focus {
+  border: 2px solid #743ee4;
+}
+.payment-form__group--payment-methods label:hover,
+.payment-form__group--payment-methods input[type='radio']:checked,
+.payment-form__group--payment-methods label:has(input[type='radio']:nth-of-type(1):checked) {
+  border: 1px solid #743ee4;
+  background-color: #ece9fc;
+}
+
+.payment-form__group--payment-methods input {
+  display: none;
+}
+
+.payment-form__group--location {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+.payment-form__group--location select,
+.payment-form__group--location input,
+.payment-form__group--location label {
+  width: 100%;
+}
+.payment-form__group--location select {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #d2d5da;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('./arrow.svg');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+}
+.payment-form__group--location select:active,
+.payment-form__group--location select:focus {
+  border: 2px solid #743ee4;
+  outline: none;
+}
+.payment-form__group--location select:active {
+  border: 2px solid #743ee4;
+  outline: none;
+}
+
+.payment-details__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.payment-details__buttons button {
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  background-color: #f0f3f6;
+  cursor: pointer;
+}
+.payment-details__buttons button:first-child {
+  width: 20%;
+}
+.payment-details__buttons button:last-child {
+  width: 80%;
+  background-color: #743ee4;
+  color: #ffffff;
+}
+
+.checkout-column:last-child {
+  padding: 1rem;
+  position: relative;
+}
+.checkout-column:last-child .container {
+  background-color: #f0f3f6;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.plan-heading {
+  margin-bottom: 0.75rem;
+}
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.plans__option {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.plans__option > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+.plans__option input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans__option input[type='radio']:checked {
+  border: 3px solid #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  background: #743ee4;
+  box-shadow: 0 0 0 1px #743ee4;
+}
+
+.plans__option input[type='radio'] {
+  border: 3px solid unset;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  background: unset;
+  box-shadow: 0 0 0 1px #6c727f;
+  pointer-events: auto;
+}
+.plans__option:not(:has(input[type='radio']:nth-of-type(1):checked)) {
+  background-color: #ffffff;
+}
+.plans__option:hover {
+  border: 1px solid #743ee4;
+}
+.plans__option:has(input[type='radio']:nth-of-type(1):checked) {
+  border: 1px solid #743ee4;
+  background-color: #ece9fc;
+}
+.plans__option span:nth-child(1) {
+  font-weight: 600;
+}
+.plans__option span:nth-child(2) {
+  color: #6c727f;
+}
+
+.plan__divider {
+  height: 1px;
+  width: 100%;
+  background-color: #d2d5da;
+  margin-bottom: 1.5rem;
+}
+.total {
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.disclaimer {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #6c727f;
+}
+.disclaimer i {
+  padding-top: 2.5px;
+}
+.background-image--container {
+  margin-top: auto;
+  margin-right: -2rem;
+  margin-bottom: -2rem;
+}
+.background-image {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .checkout {
+    flex-direction: row;
+  }
+  .checkout-column:first-child {
+    width: 100%;
+  }
+
+  .checkout-column:last-child {
+    width: 35%;
+    padding-left: 0;
+  }
+  .background-image {
+    width: 490px;
+    transform: translate(-37%, 0);
+    max-width: none;
+  }
+}
+@media (min-width: 1025px) {
+  .checkout {
+    flex-direction: row;
+  }
+  .checkout-column:first-child {
+    width: 60%;
+    padding-inline: 3.25rem;
+    padding-bottom: 1rem;
+  }
+
+  .checkout-column:last-child {
+    width: 45%;
+    padding-left: 1.25rem;
+  }
+  .background-image {
+    width: 490px;
+    transform: translate(0, 0);
+    max-width: none;
+  }
+}
